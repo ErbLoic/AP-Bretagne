@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "oSOEh5fl16k=",
+  "dgSpecHash": "gk1wOQduJpE=",
   "success": true,
   "projectFilePath": "C:\\Users\\Wallon\\source\\repos\\SIO 1\\C#\\GSBConge\\GSBConge.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Wallon\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Wallon\\.nuget\\packages\\bouncycastle.cryptography\\2.5.1\\bouncycastle.cryptography.2.5.1.nupkg.sha512",
     "C:\\Users\\Wallon\\.nuget\\packages\\google.protobuf\\3.30.0\\google.protobuf.3.30.0.nupkg.sha512",
     "C:\\Users\\Wallon\\.nuget\\packages\\k4os.compression.lz4\\1.3.8\\k4os.compression.lz4.1.3.8.nupkg.sha512",

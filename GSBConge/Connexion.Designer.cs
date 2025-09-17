@@ -1,6 +1,6 @@
 ﻿namespace GSBConge
 {
-    partial class Connexion
+    partial class Connexion_form
     {
         /// <summary>
         ///  Required designer variable.
@@ -76,8 +76,9 @@
             connecter.TabIndex = 4;
             connecter.Text = "Connecter";
             connecter.UseVisualStyleBackColor = true;
+            connecter.Click += connecter_Click;
             // 
-            // Connexion
+            // Connexion_form
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -87,8 +88,8 @@
             Controls.Add(mail);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Connexion";
-            Text = "Form1";
+            Name = "Connexion_form";
+            Text = "Connexion";
             Load += Connexion_Load;
             ResumeLayout(false);
             PerformLayout();

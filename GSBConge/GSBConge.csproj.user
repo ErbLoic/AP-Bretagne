@@ -4,5 +4,11 @@
     <Compile Update="Connexion.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="User.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
