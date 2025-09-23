@@ -35,3 +35,16 @@ C:\Users\Wallon\source\repos\SIO 1\C#\GSBConge\bin\Debug\net8.0-windows\BCrypt.N
 C:\Users\Wallon\source\repos\SIO 1\C#\GSBConge\obj\Debug\net8.0-windows\GSBConge.Connexion_form.resources
 C:\Users\Wallon\source\repos\SIO 1\C#\GSBConge\obj\Debug\net8.0-windows\GSBConge.User.resources
 C:\Users\Wallon\source\repos\SIO 1\C#\GSBConge\obj\Debug\net8.0-windows\GSBConge.admin.resources
+C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\GSBConge.csproj.AssemblyReference.cache
+C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\GSBConge.admin.resources
+C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\GSBConge.Connexion_form.resources
+C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\GSBConge.User.resources
+C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\GSBConge.csproj.GenerateResource.cache
+C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\GSBConge.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\GSBConge.AssemblyInfoInputs.cache
+C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\GSBConge.AssemblyInfo.cs
+C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\GSBConge.csproj.CoreCompileInputs.cache
+C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\GSBConge.sourcelink.json
+C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\GSBConge.dll
+C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\refint\GSBConge.dll
+C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\GSBConge.pdb

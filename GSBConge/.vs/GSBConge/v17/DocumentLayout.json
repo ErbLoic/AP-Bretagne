@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Wallon\\AP\\GSBConge\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|C:\\Users\\Wallon\\AP\\GSBConge\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Wallon\\AP\\GSBConge\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|c:\\users\\wallon\\ap\\gsbconge\\bdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:bdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Wallon\\AP\\GSBConge\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|c:\\users\\wallon\\ap\\gsbconge\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Wallon\\AP\\GSBConge\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|C:\\Users\\Wallon\\AP\\GSBConge\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Wallon\\AP\\GSBConge\\Connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|c:\\users\\wallon\\ap\\gsbconge\\connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Wallon\\AP\\GSBConge\\GSBConge.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GSBConge.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|C:\\Users\\Wallon\\AP\\GSBConge\\connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Wallon\\AP\\GSBConge\\BDD.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BDD.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|c:\\users\\wallon\\ap\\gsbconge\\gsbconge.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:gsbconge.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Wallon\\AP\\GSBConge\\connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -68,30 +68,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "admin.cs [Conception]",
+              "Title": "admin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\admin.cs",
               "RelativeDocumentMoniker": "admin.cs",
-              "ToolTip": "C:\\Users\\Wallon\\AP\\GSBConge\\admin.cs [Conception]",
-              "RelativeToolTip": "admin.cs [Conception]",
+              "ToolTip": "C:\\Users\\Wallon\\AP\\GSBConge\\admin.cs [Design]",
+              "RelativeToolTip": "admin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-16T14:35:28.354Z",
-              "EditorCaption": " [Conception]"
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\User.cs",
+              "RelativeDocumentMoniker": "User.cs",
+              "ToolTip": "C:\\Users\\Wallon\\AP\\GSBConge\\User.cs [Design]",
+              "RelativeToolTip": "User.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T14:24:13.126Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "User.cs [Conception]",
-              "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\User.cs",
-              "RelativeDocumentMoniker": "User.cs",
-              "ToolTip": "C:\\Users\\Wallon\\AP\\GSBConge\\User.cs [Conception]",
-              "RelativeToolTip": "User.cs [Conception]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T14:24:13.126Z",
-              "EditorCaption": " [Conception]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Connexion.cs",
               "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\Connexion.cs",
               "RelativeDocumentMoniker": "Connexion.cs",
@@ -104,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "GSBConge.csproj",
               "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\GSBConge.csproj",
               "RelativeDocumentMoniker": "GSBConge.csproj",
@@ -116,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "BDD.cs",
               "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\BDD.cs",
               "RelativeDocumentMoniker": "BDD.cs",
@@ -124,12 +124,11 @@
               "RelativeToolTip": "BDD.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T10:40:55.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-16T10:40:55.004Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Connexion.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\Connexion.cs",
               "RelativeDocumentMoniker": "Connexion.cs",
