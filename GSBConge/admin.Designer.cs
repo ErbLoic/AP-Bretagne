@@ -28,32 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            accepte = new Button();
+            refuse = new Button();
             SuspendLayout();
             // 
-            // label1
+            // accepte
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(187, 112);
-            label1.Name = "label1";
-            label1.Size = new Size(43, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Admin";
+            accepte.Location = new Point(653, 146);
+            accepte.Name = "accepte";
+            accepte.Size = new Size(114, 23);
+            accepte.TabIndex = 1;
+            accepte.Text = "Accepté";
+            accepte.UseVisualStyleBackColor = true;
+            // 
+            // refuse
+            // 
+            refuse.Location = new Point(653, 230);
+            refuse.Name = "refuse";
+            refuse.Size = new Size(114, 23);
+            refuse.TabIndex = 2;
+            refuse.Text = "Refusé";
+            refuse.UseVisualStyleBackColor = true;
             // 
             // admin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            Controls.Add(refuse);
+            Controls.Add(accepte);
             Name = "admin";
             Text = "Form1";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
+        private Button accepte;
+        private Button refuse;
     }
 }

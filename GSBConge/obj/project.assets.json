@@ -1660,11 +1660,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Wallon\\source\\repos\\SIO 1\\C#\\GSBConge\\GSBConge.csproj",
+      "projectUniqueName": "C:\\Users\\Wallon\\AP\\GSBConge\\GSBConge.csproj",
       "projectName": "GSBConge",
-      "projectPath": "C:\\Users\\Wallon\\source\\repos\\SIO 1\\C#\\GSBConge\\GSBConge.csproj",
+      "projectPath": "C:\\Users\\Wallon\\AP\\GSBConge\\GSBConge.csproj",
       "packagesPath": "C:\\Users\\Wallon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Wallon\\source\\repos\\SIO 1\\C#\\GSBConge\\obj\\",
+      "outputPath": "C:\\Users\\Wallon\\AP\\GSBConge\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
