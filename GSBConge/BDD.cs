@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using BCrypt.Net;
+using GSBConge.modele;
 
 namespace GSBConge
 {
@@ -113,5 +114,7 @@ namespace GSBConge
                 MessageBox.Show("Erreur : " + ex.Message);
             }
         }
+
+        
     }
 }

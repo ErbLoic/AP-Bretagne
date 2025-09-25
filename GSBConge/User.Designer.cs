@@ -48,7 +48,6 @@
             Controls.Add(label1);
             Name = "User";
             Text = "Accueil";
-            Load += this.User_Load;
             Leave += this.User_Leave;
             ResumeLayout(false);
             PerformLayout();
