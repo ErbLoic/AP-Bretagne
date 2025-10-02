@@ -30,6 +30,8 @@
         {
             accepte = new Button();
             refuse = new Button();
+            lvadmin = new ListView();
+            button1 = new Button();
             SuspendLayout();
             // 
             // accepte
@@ -40,6 +42,7 @@
             accepte.TabIndex = 1;
             accepte.Text = "Accepté";
             accepte.UseVisualStyleBackColor = true;
+            accepte.Click += accepte_Click;
             // 
             // refuse
             // 
@@ -50,20 +53,45 @@
             refuse.Text = "Refusé";
             refuse.UseVisualStyleBackColor = true;
             // 
+            // lvadmin
+            // 
+            lvadmin.FullRowSelect = true;
+            lvadmin.Location = new Point(67, 93);
+            lvadmin.Name = "lvadmin";
+            lvadmin.Size = new Size(524, 276);
+            lvadmin.TabIndex = 3;
+            lvadmin.UseCompatibleStateImageBehavior = false;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(651, 300);
+            button1.Name = "button1";
+            button1.Size = new Size(111, 29);
+            button1.TabIndex = 4;
+            button1.Text = "Quitter";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // admin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(lvadmin);
             Controls.Add(refuse);
             Controls.Add(accepte);
             Name = "admin";
             Text = "Form1";
+            Load += admin_Load;
+            Leave += admin_Leave;
             ResumeLayout(false);
         }
 
         #endregion
         private Button accepte;
         private Button refuse;
+        private ListView lvadmin;
+        private Button button1;
     }
 }

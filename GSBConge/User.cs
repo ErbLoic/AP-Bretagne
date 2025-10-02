@@ -7,19 +7,51 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GSBConge.modele;
 
 namespace GSBConge
 {
     public partial class User : Form
     {
-        public User()
+        public int idprat { get; set; }
+        public BDD bdd;
+        public Connexion_form form_conn;
+        Practicien praticien;
+        public User(int idprat, Connexion_form conn)
         {
+            bdd = new BDD("AP", "APSIO2", "172.23.48.2", "gsb");
+            bdd.Connecter();
+            this.idprat = idprat;
+            praticien = bdd.ChargerPraticienrByid(idprat);
+            this.form_conn = conn;
             InitializeComponent();
         }
 
         private void User_Leave(object sender, EventArgs e)
         {
-            
+            Connexion_form connexion_Form = new Connexion_form();
+            connexion_Form.Show();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime dateDebut = dateTimePicker1.Value;
+            DateTime dateFin = dateTimePicker2.Value;
+            Conge conge = new Conge(0, idprat, dateDebut, dateFin, "1");
+            bdd.InsérerConge(conge, label3,praticien);
+            praticien = bdd.ChargerPraticienrByid(this.idprat);
+        }
+
+        private void User_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.form_conn.Show();
+            this.Close();
         }
     }
 }
