@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GSBConge")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ce1c4fd2ee341c39817321d3e85c60c3b5ccf99")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d02c89cdee6b252089f81ffc3f742eb031edb44")]
 [assembly: System.Reflection.AssemblyProductAttribute("GSBConge")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GSBConge")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

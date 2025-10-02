@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace GSBConge.modele
 {
+    public interface IConge
+    {
+        int id { get; set; }
+        int id_praticien { get; set; }
+        DateTime date_debut { get; set; }
+        DateTime date_fin { get; set; }
+        string etat { get; set; }
+    }
     public class Conge
     {
         public int id { get; set; }
