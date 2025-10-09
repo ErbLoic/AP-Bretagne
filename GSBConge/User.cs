@@ -45,7 +45,7 @@ namespace GSBConge
 
         private void User_Load(object sender, EventArgs e)
         {
-
+            this.solde.Text ="Solde: "+Convert.ToString(this.praticien.solde_conge)+" jours";
         }
 
         private void button1_Click_1(object sender, EventArgs e)

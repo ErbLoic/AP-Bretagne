@@ -35,6 +35,7 @@
             btnValidC = new Button();
             label3 = new Label();
             button1 = new Button();
+            solde = new Label();
             SuspendLayout();
             // 
             // dateTimePicker1
@@ -99,11 +100,21 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click_1;
             // 
+            // solde
+            // 
+            solde.AutoSize = true;
+            solde.Location = new Point(487, 191);
+            solde.Name = "solde";
+            solde.Size = new Size(38, 15);
+            solde.TabIndex = 7;
+            solde.Text = "label4";
+            // 
             // User
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(659, 269);
+            Controls.Add(solde);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(btnValidC);
@@ -128,5 +139,6 @@
         private Button btnValidC;
         private Label label3;
         private Button button1;
+        private Label solde;
     }
 }

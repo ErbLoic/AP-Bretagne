@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Wallon\\AP\\GSBConge\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|c:\\users\\wallon\\ap\\gsbconge\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|C:\\Users\\Wallon\\AP\\GSBConge\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|C:\\Users\\Wallon\\AP\\GSBConge\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|c:\\users\\wallon\\ap\\gsbconge\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,24 +23,12 @@
       "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:bdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|c:\\users\\wallon\\ap\\gsbconge\\connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|C:\\Users\\Wallon\\AP\\GSBConge\\connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|C:\\Users\\Wallon\\AP\\GSBConge\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|c:\\users\\wallon\\ap\\gsbconge\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|C:\\Users\\Wallon\\AP\\GSBConge\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|c:\\users\\wallon\\ap\\gsbconge\\connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|solutionrelative:connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4DE7B6C-5B62-4D87-A420-06C2A460AE23}|GSBConge.csproj|c:\\users\\wallon\\ap\\gsbconge\\modele\\conge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,19 +62,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Conge.cs",
-              "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\modele\\Conge.cs",
-              "RelativeDocumentMoniker": "modele\\Conge.cs",
-              "ToolTip": "C:\\Users\\Wallon\\AP\\GSBConge\\modele\\Conge.cs",
-              "RelativeToolTip": "modele\\Conge.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T08:42:32.826Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Practicien.cs",
               "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\modele\\Practicien.cs",
@@ -83,12 +70,11 @@
               "RelativeToolTip": "modele\\Practicien.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwBgAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T08:33:12.799Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T08:33:12.799Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Connexion.cs",
               "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\Connexion.cs",
               "RelativeDocumentMoniker": "Connexion.cs",
@@ -101,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Connexion.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\Connexion.cs",
               "RelativeDocumentMoniker": "Connexion.cs",
@@ -113,33 +99,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "BDD.cs",
               "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\BDD.cs",
               "RelativeDocumentMoniker": "BDD.cs",
               "ToolTip": "C:\\Users\\Wallon\\AP\\GSBConge\\BDD.cs",
               "RelativeToolTip": "BDD.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAADgv4UAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAABUBAAAAAAAAAAAewOsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-16T10:40:55.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "admin.cs",
               "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\admin.cs",
               "RelativeDocumentMoniker": "admin.cs",
               "ToolTip": "C:\\Users\\Wallon\\AP\\GSBConge\\admin.cs",
               "RelativeToolTip": "admin.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAgwEEAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAgwEoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-30T13:29:55.225Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
+              "Title": "Conge.cs",
+              "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\modele\\Conge.cs",
+              "RelativeDocumentMoniker": "modele\\Conge.cs",
+              "ToolTip": "C:\\Users\\Wallon\\AP\\GSBConge\\modele\\Conge.cs",
+              "RelativeToolTip": "modele\\Conge.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T08:42:32.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "admin.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\admin.cs",
               "RelativeDocumentMoniker": "admin.cs",
@@ -151,20 +149,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\User.cs",
               "RelativeDocumentMoniker": "User.cs",
               "ToolTip": "C:\\Users\\Wallon\\AP\\GSBConge\\User.cs",
               "RelativeToolTip": "User.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAwwCoAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAwC8AAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-16T14:38:05.927Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "User.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\Wallon\\AP\\GSBConge\\User.cs",
               "RelativeDocumentMoniker": "User.cs",

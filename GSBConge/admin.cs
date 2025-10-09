@@ -66,5 +66,13 @@ namespace GSBConge
             bdd.AcceptéCongé(con);
             lvadmin.FocusedItem.Remove();
         }
+
+        private void refuse_Click(object sender, EventArgs e)
+        {
+            List<Conge> listeConge = bdd.ChargerConge();
+            Conge con = listeConge[lvadmin.FocusedItem.Index];
+            bdd.RefuséCongé(con);
+            lvadmin.FocusedItem.Remove();
+        }
     }
 }
