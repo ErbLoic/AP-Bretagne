@@ -52,6 +52,7 @@
             refuse.TabIndex = 2;
             refuse.Text = "Refusé";
             refuse.UseVisualStyleBackColor = true;
+            refuse.Click += refuse_Click;
             // 
             // lvadmin
             // 
