@@ -24,6 +24,7 @@ namespace GSBConge
             this.idprat = idprat;
             praticien = bdd.ChargerPraticienrByid(idprat);
             this.form_conn = conn;
+            bdd.AfficherMessage(idprat);
             InitializeComponent();
         }
 
@@ -41,6 +42,7 @@ namespace GSBConge
             Conge conge = new Conge(0, idprat, dateDebut, dateFin, "1");
             bdd.InsérerConge(conge, label3,praticien);
             praticien = bdd.ChargerPraticienrByid(this.idprat);
+            this.solde.Text = "Solde: " + Convert.ToString(this.praticien.solde_conge) + " jours";
         }
 
         private void User_Load(object sender, EventArgs e)

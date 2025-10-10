@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using BCrypt.Net;
 using GSBConge.modele;
+using System.Windows.Forms;
 
 namespace GSBConge
 {
@@ -228,11 +229,6 @@ namespace GSBConge
                 MySqlCommand cmd = new MySqlCommand(requete, connection);
                 cmd.Parameters.AddWithValue("@id", conge.id);
                 cmd.ExecuteNonQuery();
-                string requete2 = "INSERT INTO message(id_prat,message) Values(@id_prat , @message)";
-                MySqlCommand cmd2 = new MySqlCommand(requete2, connection);
-                cmd2.Parameters.AddWithValue("@id_prat", conge.id_praticien);
-                cmd2.Parameters.AddWithValue("@message", "Votre demande de congé du " + conge.date_debut.ToString("yyyy-MM-dd") + " au " + conge.date_fin.ToString("yyyy-MM-dd") + " a été acceptée.");
-                cmd2.ExecuteNonQuery();
 
             }
             catch (Exception ex)
@@ -255,28 +251,63 @@ namespace GSBConge
                 MessageBox.Show("Erreur : " + ex.Message);
             }
         }
-        public void AfficherMessage(int idp)
+
+        public void MarquerCommeLu(int idNotification)
         {
             try
             {
-                string requete = "SELECT message FROM praticien WHERE id = @id";
+                string requete = "UPDATE notification SET id_etat = 1 WHERE id_notif = @id";
                 MySqlCommand cmd = new MySqlCommand(requete, connection);
-                cmd.Parameters.AddWithValue("@id", idp);
-                MySqlDataReader reader = cmd.ExecuteReader();
-                if (reader.Read())
-                {
-                    string message = reader["message"].ToString();
-                    if (!string.IsNullOrEmpty(message))
-                    {
-                        MessageBox.Show(message, "Message du Praticien", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                }
-                reader.Close();
+                cmd.Parameters.AddWithValue("@id", idNotification);
+                cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erreur : " + ex.Message);
             }
+        }
+
+        public void AfficherMessage(int idp)
+        {
+            try
+            {
+                string requete = "SELECT id_notif, message FROM notification WHERE id_receveur = @id AND id_etat = 2";
+                MySqlCommand cmd = new MySqlCommand(requete, connection);
+                cmd.Parameters.AddWithValue("@id", idp);
+
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        string message = reader["message"].ToString();
+                        int idNotification = Convert.ToInt32(reader["id_notif"]);
+
+                        if (!string.IsNullOrEmpty(message))
+                        {
+                            DialogResult result = MessageBox.Show(
+                                message,
+                                "Message du RH",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information
+                            );
+
+                            if (result == DialogResult.OK)
+                            {
+                                reader.Close();
+                                MarquerCommeLu(idNotification);
+
+                                AfficherMessage(idp);
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur : " + ex.Message);
+            }
+
         }
 
         public Practicien ChargerPraticienrByid(int id)
