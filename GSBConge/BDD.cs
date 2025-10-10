@@ -7,6 +7,7 @@ using MySql.Data.MySqlClient;
 using BCrypt.Net;
 using GSBConge.modele;
 using System.Windows.Forms;
+using System.Data;
 
 namespace GSBConge
 {
@@ -109,12 +110,12 @@ namespace GSBConge
                     }
                     else
                     {
-                        MessageBox.Show("❌");
+                        MessageBox.Show("Identifiant/mots de passe incorrect");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("❌ ");
+                    MessageBox.Show("Identifiant/mots de passe incorrect");
                 }
 
 
@@ -128,14 +129,26 @@ namespace GSBConge
 
         public List<Conge> ChargerConge()
         {
-
             List<Conge> listeConge = new List<Conge>();
+            MySqlCommand cmd = null;
+            MySqlDataReader reader = null;
+
             try
             {
-                string requete = "SELECT * FROM congé where état=1";
-                MySqlCommand cmd = new MySqlCommand(requete, connection);
-                cmd.Parameters.AddWithValue("@id_praticiens", this.praticien);
-                MySqlDataReader reader = cmd.ExecuteReader();
+                // ✅ Vérifie et ouvre la connexion si nécessaire
+                if (connection.State != ConnectionState.Open)
+                    connection.Open();
+
+                string requete = @"
+            SELECT c.id, c.id_praticien, c.date_debut, c.date_fin, c.état,
+                   p.nom, p.prenom, p.id_ville, p.solde_congé
+            FROM congé c
+            INNER JOIN praticien p ON c.id_praticien = p.id
+            WHERE c.état = 1;";
+
+                cmd = new MySqlCommand(requete, connection);
+                reader = cmd.ExecuteReader();
+
                 while (reader.Read())
                 {
                     int id = Convert.ToInt32(reader["id"]);
@@ -144,18 +157,35 @@ namespace GSBConge
                     DateTime date_fin = Convert.ToDateTime(reader["date_fin"]);
                     string etat = reader["état"].ToString();
 
+                    string nom = reader["nom"].ToString();
+                    string prenom = reader["prenom"].ToString();
+                    int id_ville = Convert.ToInt32(reader["id_ville"]);
+                    decimal solde_conge = Convert.ToDecimal(reader["solde_congé"]);
+
+                    Practicien prat = new Practicien(id_praticien, nom, prenom, id_ville, solde_conge);
                     Conge conge = new Conge(id, id_praticien, date_debut, date_fin, etat);
+                    conge.praticien = prat;
+
                     listeConge.Add(conge);
                 }
-                reader.Close();
-
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur : " + ex.Message);
+                MessageBox.Show("Erreur SQL : " + ex.Message);
             }
+            finally
+            {
+                if (reader != null && !reader.IsClosed)
+                    reader.Close();
+
+                if (cmd != null)
+                    cmd.Dispose();
+
+            }
+
             return listeConge;
         }
+
 
         public List<Practicien> ChargerPrati()
         {

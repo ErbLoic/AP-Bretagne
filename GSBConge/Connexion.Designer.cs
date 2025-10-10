@@ -38,41 +38,45 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(27, 14);
+            label1.Font = new Font("Segoe UI", 15F);
+            label1.Location = new Point(12, 14);
             label1.Name = "label1";
-            label1.Size = new Size(74, 15);
+            label1.Size = new Size(123, 28);
             label1.TabIndex = 0;
             label1.Text = "Adresse Mail";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(291, 14);
+            label2.Font = new Font("Segoe UI", 15F);
+            label2.Location = new Point(542, 14);
             label2.Name = "label2";
-            label2.Size = new Size(77, 15);
+            label2.Size = new Size(129, 28);
             label2.TabIndex = 1;
             label2.Text = "Mot de passe";
             // 
             // mail
             // 
-            mail.Location = new Point(19, 29);
+            mail.Font = new Font("Segoe UI", 15F);
+            mail.Location = new Point(12, 43);
             mail.Name = "mail";
-            mail.Size = new Size(199, 23);
+            mail.Size = new Size(361, 34);
             mail.TabIndex = 2;
             // 
             // mdp
             // 
-            mdp.Location = new Point(271, 31);
+            mdp.Font = new Font("Segoe UI", 15F);
+            mdp.Location = new Point(542, 43);
             mdp.Name = "mdp";
             mdp.PasswordChar = '*';
-            mdp.Size = new Size(208, 23);
+            mdp.Size = new Size(276, 34);
             mdp.TabIndex = 3;
             // 
             // connecter
             // 
-            connecter.Location = new Point(152, 80);
+            connecter.Location = new Point(217, 124);
             connecter.Name = "connecter";
-            connecter.Size = new Size(177, 28);
+            connecter.Size = new Size(399, 50);
             connecter.TabIndex = 4;
             connecter.Text = "Connecter";
             connecter.UseVisualStyleBackColor = true;
@@ -82,7 +86,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(491, 131);
+            BackColor = SystemColors.GradientActiveCaption;
+            ClientSize = new Size(872, 204);
             Controls.Add(connecter);
             Controls.Add(mdp);
             Controls.Add(mail);

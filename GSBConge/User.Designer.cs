@@ -40,61 +40,74 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(58, 37);
+            dateTimePicker1.CalendarMonthBackground = SystemColors.InactiveCaption;
+            dateTimePicker1.Font = new Font("Segoe UI", 15F);
+            dateTimePicker1.Location = new Point(58, 90);
+            dateTimePicker1.MinDate = new DateTime(2025, 10, 10, 0, 0, 0, 0);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(197, 23);
+            dateTimePicker1.Size = new Size(299, 34);
             dateTimePicker1.TabIndex = 0;
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Location = new Point(382, 37);
+            dateTimePicker2.CalendarMonthBackground = SystemColors.InactiveCaption;
+            dateTimePicker2.Font = new Font("Segoe UI", 15F);
+            dateTimePicker2.Location = new Point(612, 90);
             dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(197, 23);
+            dateTimePicker2.Size = new Size(303, 34);
             dateTimePicker2.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(58, 19);
+            label1.Font = new Font("Segoe UI", 15F);
+            label1.Location = new Point(58, 46);
             label1.Name = "label1";
-            label1.Size = new Size(65, 15);
+            label1.Size = new Size(110, 28);
             label1.TabIndex = 2;
             label1.Text = "Date début";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(382, 19);
+            label2.Font = new Font("Segoe UI", 15F);
+            label2.Location = new Point(612, 46);
             label2.Name = "label2";
-            label2.Size = new Size(48, 15);
+            label2.Size = new Size(80, 28);
             label2.TabIndex = 3;
             label2.Text = "Date fin";
             // 
             // btnValidC
             // 
-            btnValidC.Location = new Point(250, 101);
+            btnValidC.AutoSize = true;
+            btnValidC.BackColor = SystemColors.ActiveCaption;
+            btnValidC.Font = new Font("Segoe UI", 14F);
+            btnValidC.ForeColor = SystemColors.ActiveCaptionText;
+            btnValidC.Location = new Point(365, 152);
             btnValidC.Name = "btnValidC";
-            btnValidC.Size = new Size(124, 27);
+            btnValidC.Size = new Size(250, 53);
             btnValidC.TabIndex = 4;
             btnValidC.Text = "Valider";
-            btnValidC.UseVisualStyleBackColor = true;
+            btnValidC.UseVisualStyleBackColor = false;
             btnValidC.Click += button1_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(254, 141);
+            label3.Font = new Font("Segoe UI", 12F);
+            label3.Location = new Point(365, 232);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(52, 21);
             label3.TabIndex = 5;
             label3.Text = "label3";
             label3.Visible = false;
             // 
             // button1
             // 
-            button1.Location = new Point(69, 187);
+            button1.Font = new Font("Segoe UI", 15F);
+            button1.Location = new Point(58, 308);
             button1.Name = "button1";
-            button1.Size = new Size(140, 22);
+            button1.Size = new Size(220, 36);
             button1.TabIndex = 6;
             button1.Text = "Quitter";
             button1.UseVisualStyleBackColor = true;
@@ -103,9 +116,10 @@
             // solde
             // 
             solde.AutoSize = true;
-            solde.Location = new Point(487, 191);
+            solde.Font = new Font("Segoe UI", 20F);
+            solde.Location = new Point(677, 308);
             solde.Name = "solde";
-            solde.Size = new Size(38, 15);
+            solde.Size = new Size(90, 37);
             solde.TabIndex = 7;
             solde.Text = "label4";
             // 
@@ -113,7 +127,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(659, 269);
+            BackColor = SystemColors.GradientActiveCaption;
+            ClientSize = new Size(950, 391);
             Controls.Add(solde);
             Controls.Add(button1);
             Controls.Add(label3);

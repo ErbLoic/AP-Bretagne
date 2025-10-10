@@ -39,7 +39,7 @@ namespace GSBConge
         {
             DateTime dateDebut = dateTimePicker1.Value;
             DateTime dateFin = dateTimePicker2.Value;
-            Conge conge = new Conge(0, idprat, dateDebut, dateFin, "1");
+            Conge conge = new Conge(0, this.idprat, dateDebut, dateFin, "1");
             bdd.InsérerConge(conge, label3,praticien);
             praticien = bdd.ChargerPraticienrByid(this.idprat);
             this.solde.Text = "Solde: " + Convert.ToString(this.praticien.solde_conge) + " jours";
@@ -48,6 +48,9 @@ namespace GSBConge
         private void User_Load(object sender, EventArgs e)
         {
             this.solde.Text ="Solde: "+Convert.ToString(this.praticien.solde_conge)+" jours";
+            StyliserBouton(this.btnValidC);
+            StyliserBouton(this.button1);
+
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -55,5 +58,18 @@ namespace GSBConge
             this.form_conn.Show();
             this.Close();
         }
+
+        private void StyliserBouton(Button btn)
+        {
+            btn.FlatStyle = FlatStyle.Flat;
+            btn.FlatAppearance.BorderSize = 0;
+            btn.FlatAppearance.BorderColor = Color.FromArgb(0, 122, 204);
+            btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(230, 240, 255);
+            btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 122, 204);
+            btn.BackColor = Color.White;
+            btn.ForeColor = Color.Black;
+            btn.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+        }
+
     }
 }
