@@ -20,8 +20,8 @@
 - [x] Connexion entre l’application C# et la base de données  
 - [x] Connexion avec les comptes utilisateurs  
 - [x] Création des objets en C#
-- [ ] Faire Interface Utilisateur
-- [ ] Faire Interface Administrateur
+- [x] Faire Interface Utilisateur
+- [x] Faire Interface Administrateur
 
 👉 [Pour y acceder c'est ici](https://github.com/ErbLoic/AP-Bretagne/tree/main/GSBConge)
 
@@ -61,7 +61,7 @@
 
 ---
 
-### 📌 Mission 2 : Inconnu
+### 📌 Mission 2 : Développement de l'application Laravel
 | Tâche         | Statut |
 |---------------|--------|
 | ❔ À définir  | ❔ |
