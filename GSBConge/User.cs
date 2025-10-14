@@ -7,19 +7,82 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
+=======
+using GSBConge.modele;
+>>>>>>> ba95a9aa3d22d61a28078cf2880ac9e99b32a99a
 
 namespace GSBConge
 {
     public partial class User : Form
     {
+<<<<<<< HEAD
         public User()
         {
+=======
+        public int idprat { get; set; }
+        public BDD bdd;
+        public Connexion_form form_conn;
+        Practicien praticien;
+        public User(int idprat, Connexion_form conn)
+        {
+            bdd = new BDD("AP", "APSIO2", "172.23.48.2", "gsb");
+            bdd.Connecter();
+            this.idprat = idprat;
+            praticien = bdd.ChargerPraticienrByid(idprat);
+            this.form_conn = conn;
+            bdd.AfficherMessage(idprat);
+>>>>>>> ba95a9aa3d22d61a28078cf2880ac9e99b32a99a
             InitializeComponent();
         }
 
         private void User_Leave(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             
         }
+=======
+            Connexion_form connexion_Form = new Connexion_form();
+            connexion_Form.Show();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime dateDebut = dateTimePicker1.Value;
+            DateTime dateFin = dateTimePicker2.Value;
+            Conge conge = new Conge(0, this.idprat, dateDebut, dateFin, "1");
+            bdd.InsérerConge(conge, label3,praticien);
+            praticien = bdd.ChargerPraticienrByid(this.idprat);
+            this.solde.Text = "Solde: " + Convert.ToString(this.praticien.solde_conge) + " jours";
+        }
+
+        private void User_Load(object sender, EventArgs e)
+        {
+            this.solde.Text ="Solde: "+Convert.ToString(this.praticien.solde_conge)+" jours";
+            StyliserBouton(this.btnValidC);
+            StyliserBouton(this.button1);
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.form_conn.Show();
+            this.Close();
+        }
+
+        private void StyliserBouton(Button btn)
+        {
+            btn.FlatStyle = FlatStyle.Flat;
+            btn.FlatAppearance.BorderSize = 0;
+            btn.FlatAppearance.BorderColor = Color.FromArgb(0, 122, 204);
+            btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(230, 240, 255);
+            btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 122, 204);
+            btn.BackColor = Color.White;
+            btn.ForeColor = Color.Black;
+            btn.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+        }
+
+>>>>>>> ba95a9aa3d22d61a28078cf2880ac9e99b32a99a
     }
 }
