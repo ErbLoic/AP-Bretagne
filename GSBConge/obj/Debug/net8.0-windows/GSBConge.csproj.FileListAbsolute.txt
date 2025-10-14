@@ -73,3 +73,4 @@ C:\Users\Wallon\AP\GSBConge\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0
 C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\GSBConge.csproj.Up2Date
 C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\GSBConge.genruntimeconfig.cache
 C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\ref\GSBConge.dll
+C:\Users\Wallon\AP\GSBConge\obj\Debug\net8.0-windows\GSBConge.Properties.Resources.resources

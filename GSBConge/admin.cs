@@ -50,7 +50,6 @@ namespace GSBConge
             StyliserBouton(this.accepte);
             StyliserBouton(this.refuse);
             StyliserBouton(this.button1);
-            StyliserListView(this.lvadmin);
 
         }
 
@@ -124,46 +123,7 @@ namespace GSBConge
             btn.Font = new Font("Segoe UI", 10, FontStyle.Bold);
         }
 
-        private void StyliserListView(ListView lv)
-        {
-            lv.BorderStyle = BorderStyle.None;
-            lv.FullRowSelect = true;
-            lv.GridLines = false;
-            lv.HideSelection = false;
-            lv.MultiSelect = false;
-            lv.View = View.Details;
-            lv.Font = new Font("Segoe UI", 10, FontStyle.Regular);
-            lv.ForeColor = Color.FromArgb(40, 40, 40);
-            lv.BackColor = Color.FromArgb(245, 245, 250);
-            lv.HeaderStyle = ColumnHeaderStyle.Nonclickable;
-            lv.OwnerDraw = true; // permet de personnaliser le rendu
-
-            // Style des en-têtes
-            lv.DrawColumnHeader += (s, e) =>
-            {
-                using (SolidBrush backBrush = new SolidBrush(Color.FromArgb(230, 230, 240)))
-                using (Pen borderPen = new Pen(Color.FromArgb(210, 210, 220)))
-                {
-                    e.Graphics.FillRectangle(backBrush, e.Bounds);
-                    e.Graphics.DrawLine(borderPen, e.Bounds.Left, e.Bounds.Bottom - 1, e.Bounds.Right, e.Bounds.Bottom - 1);
-                    TextRenderer.DrawText(e.Graphics, e.Header.Text, lv.Font, e.Bounds, Color.FromArgb(60, 60, 70), TextFormatFlags.Left | TextFormatFlags.VerticalCenter);
-                }
-            };
-
-            // Style des items
-            lv.DrawItem += (s, e) => { /* vide, mais nécessaire pour DrawSubItem */ };
-
-            // Style des sous-éléments (le texte)
-            lv.DrawSubItem += (s, e) =>
-            {
-                bool isSelected = (e.ItemState & ListViewItemStates.Selected) != 0;
-                Color backColor = isSelected ? Color.FromArgb(0, 120, 215) : lv.BackColor;
-                Color textColor = isSelected ? Color.White : lv.ForeColor;
-
-                e.Graphics.FillRectangle(new SolidBrush(backColor), e.Bounds);
-                TextRenderer.DrawText(e.Graphics, e.SubItem.Text, lv.Font, e.Bounds, textColor, TextFormatFlags.Left | TextFormatFlags.VerticalCenter);
-            };
-        }
+        
 
     }
 }
