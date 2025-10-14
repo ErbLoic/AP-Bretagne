@@ -7,12 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
+=======
 using GSBConge.modele;
+>>>>>>> ba95a9aa3d22d61a28078cf2880ac9e99b32a99a
 
 namespace GSBConge
 {
     public partial class User : Form
     {
+<<<<<<< HEAD
+        public User()
+        {
+=======
         public int idprat { get; set; }
         public BDD bdd;
         public Connexion_form form_conn;
@@ -25,11 +32,16 @@ namespace GSBConge
             praticien = bdd.ChargerPraticienrByid(idprat);
             this.form_conn = conn;
             bdd.AfficherMessage(idprat);
+>>>>>>> ba95a9aa3d22d61a28078cf2880ac9e99b32a99a
             InitializeComponent();
         }
 
         private void User_Leave(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+            
+        }
+=======
             Connexion_form connexion_Form = new Connexion_form();
             connexion_Form.Show();
             this.Close();
@@ -71,5 +83,6 @@ namespace GSBConge
             btn.Font = new Font("Segoe UI", 10, FontStyle.Bold);
         }
 
+>>>>>>> ba95a9aa3d22d61a28078cf2880ac9e99b32a99a
     }
 }

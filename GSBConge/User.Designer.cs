@@ -28,6 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
+            label1 = new Label();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(156, 103);
+            label1.Name = "label1";
+            label1.Size = new Size(29, 15);
+            label1.TabIndex = 0;
+            label1.Text = "user";
+=======
             dateTimePicker1 = new DateTimePicker();
             dateTimePicker2 = new DateTimePicker();
             label1 = new Label();
@@ -122,11 +135,20 @@
             solde.Size = new Size(90, 37);
             solde.TabIndex = 7;
             solde.Text = "label4";
+>>>>>>> ba95a9aa3d22d61a28078cf2880ac9e99b32a99a
             // 
             // User
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD
+            ClientSize = new Size(800, 450);
+            Controls.Add(label1);
+            Name = "User";
+            Text = "Accueil";
+            Load += this.User_Load;
+            Leave += this.User_Leave;
+=======
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(950, 391);
             Controls.Add(solde);
@@ -141,12 +163,16 @@
             Text = "Accueil";
             Load += User_Load;
             Leave += User_Leave;
+>>>>>>> ba95a9aa3d22d61a28078cf2880ac9e99b32a99a
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
+<<<<<<< HEAD
+        private Label label1;
+=======
         private DateTimePicker dateTimePicker1;
         private DateTimePicker dateTimePicker2;
         private Label label1;
@@ -155,5 +181,6 @@
         private Label label3;
         private Button button1;
         private Label solde;
+>>>>>>> ba95a9aa3d22d61a28078cf2880ac9e99b32a99a
     }
 }
