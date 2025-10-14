@@ -492,3 +492,4 @@ C:\Users\Wallon\AP\GSBConge\obj\Release\net8.0-windows\win-x64\refint\GSBConge.d
 C:\Users\Wallon\AP\GSBConge\obj\Release\net8.0-windows\win-x64\GSBConge.pdb
 C:\Users\Wallon\AP\GSBConge\obj\Release\net8.0-windows\win-x64\GSBConge.genruntimeconfig.cache
 C:\Users\Wallon\AP\GSBConge\obj\Release\net8.0-windows\win-x64\ref\GSBConge.dll
+C:\Users\Wallon\AP\GSBConge\obj\Release\net8.0-windows\win-x64\GSBConge.Properties.Resources.resources
