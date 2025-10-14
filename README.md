@@ -18,17 +18,15 @@
 ## 📌 Mission 1 : Développement de l’application C#
 - [x] Modification de la base de données  
 - [x] Connexion entre l’application C# et la base de données  
-<<<<<<< HEAD
 - [ ] Connexion avec les comptes utilisateurs  
 - [ ] Création des objets en C#
 - [ ] Faire Interface Utilisateur
 - [ ] Faire Interface Administrateur
-=======
 - [x] Connexion avec les comptes utilisateurs  
 - [x] Création des objets en C#
 - [x] Faire Interface Utilisateur
 - [x] Faire Interface Administrateur
->>>>>>> ba95a9aa3d22d61a28078cf2880ac9e99b32a99a
+
 
 👉 [Pour y acceder c'est ici](https://github.com/ErbLoic/AP-Bretagne/tree/main/GSBConge)
 
@@ -38,12 +36,8 @@
 | Tâche                           | Statut |
 |--------------------------------|--------|
 | Mission 0                | ✅ Terminé |
-<<<<<<< HEAD
-| Mission 1 | ⏳ En cours |
-=======
-| Mission 1 | ⏳ En attente |
->>>>>>> ba95a9aa3d22d61a28078cf2880ac9e99b32a99a
-| Mission 2 | ❔ Inconnu |
+| Mission 1 | ✅ Terminé |
+| Mission 2 | ⏳ en attente |
 | Mission 3 | ❔ Inconnu |
 | Mission 4 | ❔ Inconnu |
 
@@ -65,18 +59,14 @@
 |--------------------------------|--------|
 | Modification BDD            | ✅ |
 | Connexion C# ↔ BDD          | ✅ |
-| Connexion comptes utilisateurs | ⏳ |
-| Création des objets en c# | ❌ |
-| Faire interface Utilisateur| ❌ |
-| Faire Interface Administrateur | ❌ |
+| Connexion comptes utilisateurs | ✅ |
+| Création des objets en c# | ✅ |
+| Faire interface Utilisateur| ✅ |
+| Faire Interface Administrateur | ✅ |
 
 ---
 
-<<<<<<< HEAD
 ### 📌 Mission 2 : Inconnu
-=======
-### 📌 Mission 2 : Développement de l'application Laravel
->>>>>>> ba95a9aa3d22d61a28078cf2880ac9e99b32a99a
 | Tâche         | Statut |
 |---------------|--------|
 | ❔ À définir  | ❔ |
@@ -95,15 +85,6 @@
 |---------------|--------|
 | ❔ À définir  | ❔ |
 
-<<<<<<< HEAD
 
 ✍️ *Projet réalisé dans le cadre de l’AP-Bretagne.*                       
 ***Ywel Djerba & Loïc Erbuer***
-=======
-✍️ *Projet réalisé dans le cadre de l’AP-Bretagne.*                       
-***Ywel Djerba & Loïc Erbuer***
-
-
-
-
->>>>>>> ba95a9aa3d22d61a28078cf2880ac9e99b32a99a
