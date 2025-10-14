@@ -18,10 +18,10 @@
 ## 📌 Mission 1 : Développement de l’application C#
 - [x] Modification de la base de données  
 - [x] Connexion entre l’application C# et la base de données  
-- [ ] Connexion avec les comptes utilisateurs  
-- [ ] Création des objets en C#
-- [ ] Faire Interface Utilisateur
-- [ ] Faire Interface Administrateur
+- [x] Connexion avec les comptes utilisateurs  
+- [x] Création des objets en C#
+- [x] Faire Interface Utilisateur
+- [x] Faire Interface Administrateur
 - [x] Connexion avec les comptes utilisateurs  
 - [x] Création des objets en C#
 - [x] Faire Interface Utilisateur
