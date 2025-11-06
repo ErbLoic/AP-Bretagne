@@ -27,4 +27,16 @@ class PraticienControlleur extends Controller
 
         return view('praticiens.index', compact('praticiens'));
     }
+
+   public function addAnciennete(Request $request, $id)
+{
+    $praticien = Praticien::findOrFail($id);
+
+    $praticien->anciennete += 1;
+
+    $praticien->save();
+
+    return redirect()->back()->with('success', 'Ancienneté mise à jour !');
+}
+
 }

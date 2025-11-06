@@ -13,6 +13,7 @@ Route::post('/login', [ConnexionControlleur::class, 'connecter'])->name('login.p
 Route::middleware('auth')->group(function () {
 Route::post('/search', [PraticienControlleur::class, 'search'])->name('praticiens.search');
 Route::get('/praticiens', [PraticienControlleur::class, 'index'])->name('praticiens.index');
+Route::post('/praticiens/{id}/add-anciennete', [PraticienControlleur::class, 'addAnciennete'])->name('praticiens.add');
 Route::post('/logout', function () {
     Auth::logout();
     request()->session()->invalidate();
@@ -22,7 +23,4 @@ Route::post('/logout', function () {
 Route::get('/praticiens/{id}', [PraticienControlleur::class, 'show'])->name('praticiens.show');
 });
 
-Route::prefix('api')->group(function () {
-    Route::get('/praticiens', [PostController::class, 'index']);
-    Route::get('/praticiens/{id}', [PostController::class, 'show']);
-});
+

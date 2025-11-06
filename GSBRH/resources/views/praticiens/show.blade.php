@@ -32,6 +32,13 @@
                 </li>
 
                 <li class="list-group-item"><strong>Ancienneté :</strong> {{ $praticien->anciennete }} ans</li>
+                
+                <li class="list-group-item">
+               <form action="{{ route('praticiens.add', ['id' => $praticien->id]) }}" method="POST">
+                    @csrf
+                    <button type="submit" class="btn btn-primary">Ajouter 1 an</button>
+                </form>
+                </li>
 
                 <li class="list-group-item"><strong>Salaire :</strong> {{ $praticien->Echelon->salaire_brut }} €</li>
                 <li class="list-group-item"><strong>Echelon :</strong> {{ $praticien->Echelon->id_echelon }}</li>
