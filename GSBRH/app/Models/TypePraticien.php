@@ -17,7 +17,6 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null $lieu
  * @property string $type
  * 
- * @property Echellesalaire|null $echellesalaire
  * @property Collection|Praticien[] $praticiens
  *
  * @package App\Models
@@ -34,11 +33,6 @@ class TypePraticien extends Model
 		'lieu',
 		'type'
 	];
-
-	public function echellesalaire()
-	{
-		return $this->hasOne(Echellesalaire::class, 'id');
-	}
 
 	public function praticiens()
 	{

@@ -22,7 +22,7 @@
         <form action="{{ route('praticiens.search') }}" method="POST" class="mb-4">
             @csrf
             <div class="input-group">
-                <input type="text" name="query" class="form-control" placeholder="Rechercher par nom ou spécialité" >
+                <input type="text" name="query" class="form-control" placeholder="Rechercher par nom" >
                 <button type="submit" class="btn btn-primary">Rechercher</button>
             </div>
             <BR>    </BR>

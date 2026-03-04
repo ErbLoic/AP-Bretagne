@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Model;
  * Class Echelon
  * 
  * @property int $id_echelon
- * @property string $duree
+ * @property int|null $duree
  * @property float $salaire_brut
  * 
  * @property Collection|Praticien[] $praticiens
@@ -29,6 +29,7 @@ class Echelon extends Model
 
 	protected $casts = [
 		'id_echelon' => 'int',
+		'duree' => 'int',
 		'salaire_brut' => 'float'
 	];
 
