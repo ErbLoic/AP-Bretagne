@@ -1,0 +1,46 @@
+# Build results
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# Visual Studio
+.vs/
+.vscode/
+*.sln.user
+*.csproj.user
+*.vbproj.user
+*.suo
+*.user
+
+# User-specific files
+*.userprefs
+*.rsuser
+
+# Build logs
+*.log
+logs/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Local packages
+packages/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp

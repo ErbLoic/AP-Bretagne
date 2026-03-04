@@ -1,0 +1,488 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Praticiens",
+        "description": "API pour gérer les praticiens",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "/api",
+            "description": "API Server"
+        }
+    ],
+    "paths": {
+        "/auth/login": {
+            "post": {
+                "tags": [
+                    "Authentification"
+                ],
+                "summary": "Connexion utilisateur",
+                "operationId": "8cb7742ae98d0990acb2907c4e00bf24",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "identifiant",
+                                    "mdp"
+                                ],
+                                "properties": {
+                                    "identifiant": {
+                                        "type": "string",
+                                        "example": "user123"
+                                    },
+                                    "mdp": {
+                                        "type": "string",
+                                        "example": "password"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Connexion réussie"
+                    },
+                    "401": {
+                        "description": "Identifiants incorrects"
+                    },
+                    "500": {
+                        "description": "Erreur serveur"
+                    }
+                }
+            }
+        },
+        "/auth/register": {
+            "post": {
+                "tags": [
+                    "Authentification"
+                ],
+                "summary": "Inscription utilisateur",
+                "operationId": "ed42f392010c301892e640067141676e",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "identifiant",
+                                    "mdp",
+                                    "id_praticiens"
+                                ],
+                                "properties": {
+                                    "identifiant": {
+                                        "type": "string",
+                                        "example": "newuser"
+                                    },
+                                    "mdp": {
+                                        "type": "string",
+                                        "example": "password123"
+                                    },
+                                    "id_praticiens": {
+                                        "type": "integer",
+                                        "example": 1
+                                    },
+                                    "privilèges": {
+                                        "type": "integer",
+                                        "example": 0
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Utilisateur créé"
+                    },
+                    "422": {
+                        "description": "Erreur de validation"
+                    }
+                }
+            }
+        },
+        "/auth/logout": {
+            "post": {
+                "tags": [
+                    "Authentification"
+                ],
+                "summary": "Déconnexion utilisateur",
+                "operationId": "0d29c740dc06d77602af8095bf4654cc",
+                "responses": {
+                    "200": {
+                        "description": "Déconnexion réussie"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/auth/refresh": {
+            "post": {
+                "tags": [
+                    "Authentification"
+                ],
+                "summary": "Rafraîchir le token JWT",
+                "operationId": "f6c9683ed975ace7d035a09e6e2a9332",
+                "responses": {
+                    "200": {
+                        "description": "Token rafraîchi"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/auth/me": {
+            "get": {
+                "tags": [
+                    "Authentification"
+                ],
+                "summary": "Profil utilisateur connecté",
+                "operationId": "a9c495788506b114956e3f509e5d90a2",
+                "responses": {
+                    "200": {
+                        "description": "Profil utilisateur"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/praticiens": {
+            "get": {
+                "tags": [
+                    "Praticiens"
+                ],
+                "summary": "Liste des praticiens",
+                "operationId": "a5649dd000a9a486650b012e38ea38b6",
+                "responses": {
+                    "200": {
+                        "description": "Succès"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Praticiens"
+                ],
+                "summary": "Crée un nouveau praticien",
+                "operationId": "82019d6a5090b6fed2663d10d36d58c8",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "nom",
+                                    "prenom",
+                                    "adresse",
+                                    "id_ville",
+                                    "anciennete",
+                                    "id_echelon"
+                                ],
+                                "properties": {
+                                    "nom": {
+                                        "type": "string"
+                                    },
+                                    "prenom": {
+                                        "type": "string"
+                                    },
+                                    "adresse": {
+                                        "type": "string"
+                                    },
+                                    "id_ville": {
+                                        "type": "integer"
+                                    },
+                                    "anciennete": {
+                                        "type": "integer"
+                                    },
+                                    "id_echelon": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Praticien créé"
+                    }
+                }
+            }
+        },
+        "/praticiens/{id}": {
+            "get": {
+                "tags": [
+                    "Praticiens"
+                ],
+                "summary": "Affiche un praticien spécifique",
+                "operationId": "db1afedeec24655b1820fa2e98a414f1",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Succès"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Praticiens"
+                ],
+                "summary": "Met à jour un praticien existant",
+                "operationId": "70683fb36e045c27eafa96cce1c31c55",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "nom": {
+                                        "type": "string"
+                                    },
+                                    "prenom": {
+                                        "type": "string"
+                                    },
+                                    "adresse": {
+                                        "type": "string"
+                                    },
+                                    "id_ville": {
+                                        "type": "integer"
+                                    },
+                                    "anciennete": {
+                                        "type": "integer"
+                                    },
+                                    "id_echelon": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Praticien mis à jour"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Praticiens"
+                ],
+                "summary": "Supprime un praticien",
+                "operationId": "4d50b07a2b5784790f2dc83202f97719",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Praticien supprimé"
+                    }
+                }
+            }
+        },
+        "/praticiens/nom/{nom}": {
+            "get": {
+                "tags": [
+                    "Praticiens"
+                ],
+                "summary": "Affiche un praticien par nom",
+                "operationId": "3c36b55da39da16145e9b1d8e4ea812b",
+                "parameters": [
+                    {
+                        "name": "nom",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Succès"
+                    }
+                }
+            }
+        },
+        "/praticiens/search": {
+            "get": {
+                "tags": [
+                    "Praticiens"
+                ],
+                "summary": "Recherche des praticiens par nom ou prénom",
+                "operationId": "ad926a86b0e9f69024d07ef65724ff69",
+                "parameters": [
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Succès"
+                    }
+                }
+            }
+        },
+        "/notes": {
+            "get": {
+                "tags": [
+                    "Notes"
+                ],
+                "summary": "Liste toutes les notes",
+                "operationId": "39dfa33a7d56163c7eaac99f8c65262e",
+                "responses": {
+                    "200": {
+                        "description": "Succès"
+                    }
+                }
+            }
+        },
+        "/notes/{id}": {
+            "get": {
+                "tags": [
+                    "Notes"
+                ],
+                "summary": "Liste les notes d'un praticien",
+                "operationId": "581f118fe2412436e0e05d16b00c38f8",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Succès"
+                    }
+                }
+            }
+        },
+        "/note/create": {
+            "post": {
+                "tags": [
+                    "Notes"
+                ],
+                "summary": "Créer une note pour un praticien",
+                "operationId": "a86a696d75350c196312e794792e3dc9",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "commentaire",
+                                    "note"
+                                ],
+                                "properties": {
+                                    "commentaire": {
+                                        "type": "string"
+                                    },
+                                    "note": {
+                                        "type": "integer"
+                                    },
+                                    "id_praticien": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Note créée"
+                    },
+                    "400": {
+                        "description": "Erreur de validation"
+                    },
+                    "401": {
+                        "description": "Non authentifié"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "description": "Entrez le token JWT",
+                "bearerFormat": "JWT",
+                "scheme": "bearer"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Authentification",
+            "description": "Authentification"
+        },
+        {
+            "name": "Praticiens",
+            "description": "Praticiens"
+        },
+        {
+            "name": "Notes",
+            "description": "Notes"
+        }
+    ]
+}

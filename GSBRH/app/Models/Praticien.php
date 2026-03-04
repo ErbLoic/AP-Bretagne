@@ -17,18 +17,22 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null $prenom
  * @property string|null $adresse
  * @property float|null $coef_notoriete
- * @property string $code_type_praticien
+ * @property string|null $code_type_praticien
  * @property int $id_ville
  * @property float $Solde_congé
  * @property float $Ancien_Solde_Congé
  * @property int $anciennete
  * @property int $id_echelon
+ * @property float $note_client
+ * @property float $note_expert
+ * @property float $note_global
  * 
- * @property TypePraticien $type_praticien
+ * @property TypePraticien|null $type_praticien
  * @property Ville $ville
  * @property Echelon $echelon
  * @property Collection|Congé[] $congés
  * @property Collection|Connexion[] $connexions
+ * @property Collection|Note[] $notes
  * @property Collection|Notification[] $notifications
  *
  * @package App\Models
@@ -44,7 +48,10 @@ class Praticien extends Model
 		'Solde_congé' => 'float',
 		'Ancien_Solde_Congé' => 'float',
 		'anciennete' => 'int',
-		'id_echelon' => 'int'
+		'id_echelon' => 'int',
+		'note_client' => 'float',
+		'note_expert' => 'float',
+		'note_global' => 'float'
 	];
 
 	protected $fillable = [
@@ -57,7 +64,10 @@ class Praticien extends Model
 		'Solde_congé',
 		'Ancien_Solde_Congé',
 		'anciennete',
-		'id_echelon'
+		'id_echelon',
+		'note_client',
+		'note_expert',
+		'note_global'
 	];
 
 	public function type_praticien()
@@ -83,6 +93,11 @@ class Praticien extends Model
 	public function connexions()
 	{
 		return $this->hasMany(Connexion::class, 'id_praticiens');
+	}
+
+	public function notes()
+	{
+		return $this->hasMany(Note::class, 'concerne');
 	}
 
 	public function notifications()

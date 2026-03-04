@@ -16,13 +16,14 @@ class PraticienResource extends JsonResource
     public function toArray($request)
 {
     return [
+            'id' => $this->id,
             'nom' => $this->nom,
             'prenom' => $this->prenom,
             'adresse' => $this->adresse,
             'ville' => json_decode($this->ville),
-            'anciennete' => $this->anciennete . ' ans',
-            'salaire' => $this->Echelon->salaire_brut . ' €',
-            'echelon' => $this->Echelon->id_echelon,
+            'note_client' => $this->note_client,
+            'note_expert' => $this->note_expert,
+            'note_global' => $this->note_global,
         ];
 }
 
