@@ -4,28 +4,16 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-<<<<<<< HEAD
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-=======
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using GSBConge.modele;
->>>>>>> ba95a9aa3d22d61a28078cf2880ac9e99b32a99a
 
 namespace GSBConge
 {
     public partial class admin : Form
     {
-<<<<<<< HEAD
-        public admin()
-        {
-            InitializeComponent();
-        }
-=======
         public BDD bdd;
         public Connexion_form form_conn;
         public List<Conge> listeConge;
@@ -137,6 +125,5 @@ namespace GSBConge
 
         
 
->>>>>>> ba95a9aa3d22d61a28078cf2880ac9e99b32a99a
     }
 }
